@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo Folder</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .header {
+      background-color: #E0E0E0;
+      color: black;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #333;
+    }
+
+    .photo-container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .photo-item {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .photo-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-size: 14px;
+      font-style: italic;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Photo Folder</h1>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo-item">
+      <img src="path/to/photo1.jpg" alt="Photo 1">
+      <div class="caption">A walk in the sunset.</div>
+    </div>
+
+    <div class="photo-item">
+      <img src="path/to/photo2.jpg" alt="Photo 2">
+      <div class="caption">Candid moment captured.</div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+

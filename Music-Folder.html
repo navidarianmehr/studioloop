@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Folder</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      background-color: #e0e0e0;
+      padding: 40px 0;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .track {
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      margin: 16px;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .track audio {
+      width: 120px;
+      margin-right: 20px;
+    }
+
+    .track-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .track-title {
+      font-weight: bold;
+    }
+
+    .track-caption {
+      font-size: 14px;
+      color: #555;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Music Folder</header>
+
+  <div class="track">
+    <audio controls>
+      <source src="path/to/music1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="track-info">
+      <div class="track-title">Track Title 1</div>
+      <div class="track-caption">Artist Name — Optional Caption</div>
+    </div>
+  </div>
+
+  <div class="track">
+    <audio controls>
+      <source src="path/to/music2.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="track-info">
+      <div class="track-title">Track Title 2</div>
+      <div class="track-caption">Artist Name — Optional Caption</div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
