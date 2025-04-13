@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Folder</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .header {
+      background-color: #E0E0E0;
+      color: black;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #333;
+    }
+
+    .video-container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .video-item {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-item video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-size: 14px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Video Folder</h1>
+  </div>
+
+  <div class="video-container">
+    <div class="video-item">
+      <video controls>
+        <source src="path/to/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Short behind-the-scenes clip.</div>
+    </div>
+
+    <div class="video-item">
+      <video controls>
+        <source src="path/to/video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">Another experimental video piece.</div>
+    </div>
+  </div>
+
+</body>
+</html>
