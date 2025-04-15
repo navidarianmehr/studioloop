@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudioLooping</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f7f7f7;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #d0d0d0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    .content {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 0px;
+      direction: ltr;
+      text-align: left;
+    }
+
+    .post {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .post:hover {
+      transform: translateY(-10px);
+    }
+
+    .post img, .post video, .post audio, .post iframe {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .post .caption {
+      padding: 10px;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .music-info {
+      padding: 10px;
+    }
+
+    .music-info p {
+      margin-bottom: 10px;
+    }
+
+    audio, video {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    audio {
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      padding: 5px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #161616;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>StudioLooping</h1>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- داستان سایت (پست اول) -->
+    <div class="post">
+      <img src="https://via.placeholder.com/600x400.png?text=Studio+Looping+Story" alt="Story Image">
+      <div class="caption">
+        <h3 style="margin-bottom: 0.5rem;">The Birth of StudioLooping</h3>
+        <p>
+          It all started on a rainy evening. A beat, a loop, a feeling. Somewhere between static and silence,
+          StudioLooping was born—not just as a space for sound, but as a haven for untold stories. 
+          Here, every loop carries memory. Every track is a confession. Every silence, a scream.
+        </p>
+      </div>
+    </div>
+
+    <!-- تصویر -->
+    <div class="post">
+      <img src="https://via.placeholder.com/600x400.png?text=Image+Placeholder" alt="Example Image">
+      <div class="caption">This is a placeholder image for testing.</div>
+    </div>
+
+    <!-- موزیک اول -->
+    <div class="post">
+      <div class="music-info">
+        <p><strong>Track Title:</strong> Example Music 1</p>
+        <p><strong>Artist:</strong> Artist 1</p>
+        <audio controls preload="none">
+          <source data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <!-- ویدیو -->
+    <div class="post">
+      <video controls preload="none">
+        <source data-src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">This is a placeholder video for testing.</div>
+    </div>
+
+    <!-- فایل PDF -->
+    <div class="post">
+      <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="100%" height="400px">
+        This browser does not support inline PDFs. Please download the PDF to view it: <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">Download PDF</a>
+      </iframe>
+      <div class="caption">This is a placeholder PDF file.</div>
+    </div>
+
+    <!-- موزیک دوم -->
+    <div class="post">
+      <div class="music-info">
+        <p><strong>Track Title:</strong> Example Music 2</p>
+        <p><strong>Artist:</strong> Artist 2</p>
+        <audio controls preload="none">
+          <source data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <!-- تصویر دوم -->
+    <div class="post">
+      <img src="https://via.placeholder.com/600x400.png?text=Another+Image+Placeholder" alt="Example Image">
+      <div class="caption">This is another placeholder image for testing.</div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 StudioLooping. All rights reserved.</p>
+    <p>Contact: <a href="mailto:navidarianmehr@gmail.com">navidarianmehr@gmail.com</a></p>
+  </footer>
+
+  <!-- Lazy Load Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Lazy load for images
+      document.querySelectorAll('img').forEach(img => {
+        if (!img.hasAttribute('loading')) {
+          img.setAttribute('loading', 'lazy');
+        }
+      });
+
+      // Lazy load for audio & video
+      const lazyMedia = document.querySelectorAll("audio source[data-src], video source[data-src]");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const source = entry.target;
+            source.src = source.dataset.src;
+            const media = source.closest("audio, video");
+            media.load();
+            observer.unobserve(source);
+          }
+        });
+      });
+
+      lazyMedia.forEach(src => observer.observe(src));
+    });
+  </script>
+
+</body>
+</html>
